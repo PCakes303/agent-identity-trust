@@ -32,6 +32,15 @@ SPIFFE/SPIRE, OAuth 2.0, and OpenID Connect are integration targets. This reposi
 ## Status
 Scaffolded, v0.1.0. Published data contract, example, reference validator, tests, and CI are an initial foundation, not a deployed trust service.
 
+## Entry-level build
+
+Start with the runnable starter build:
+
+    python tools/starter_build.py
+    python -m unittest discover -s tests -v
+
+See [Entry-level build guide](docs/ENTRY-LEVEL-BUILD.md) for Starter → Developer → Production progression.
+
 ## Ecosystem
 Master registry: https://github.com/PCakes303/agent-intelligence-ecosystem
 
