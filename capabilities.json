@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "repository": "agent-identity-trust",
+  "capabilities": [
+    {
+      "id": "identity.principal",
+      "status": "scaffolded",
+      "description": "Principal identity data contract."
+    },
+    {
+      "id": "identity.delegation",
+      "status": "planned",
+      "description": "Constrained delegation model."
+    },
+    {
+      "id": "identity.revocation",
+      "status": "planned",
+      "description": "Credential and trust revocation lifecycle."
+    }
+  ]
+}
