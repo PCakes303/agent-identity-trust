@@ -27,7 +27,7 @@
     "issuer": {
       "type": "string",
       "format": "uri",
-      "pattern": "^(https://|spiffe://)[^\\\\s]+$"
+      "pattern": "^(https://|spiffe://)[^/\\s?#]+(?:[/#?][^\\s]*)?$"
     },
     "created_at": {
       "type": "string",
