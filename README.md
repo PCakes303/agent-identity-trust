@@ -1,23 +1,41 @@
 # Agent Identity and Trust
 
-MrCakes931 Agent Intelligence Ecosystem · Identity and security layer
+**MrCakes931 Agent Intelligence Ecosystem · Identity and security layer**
 
-Defines principal identity, authentication context, authorization, delegation, revocation, and trust-boundary contracts.
+Defines principal identity, authentication context, authorization, delegation, revocation, and trust-boundary contracts for agents, services, workloads, and human operators.
 
 ## Scope
-- Human, agent, service, and workload principals.
-- Issuer-scoped identifiers and credential metadata.
-- Default-deny authorization and bounded delegation.
+- Issuer-scoped principal identifiers for human, agent, service, and workload identities.
+- Credential metadata, audience and validity constraints.
+- Default-deny authorization and narrowly scoped delegation.
 - Key rotation, expiry, revocation, and security audit requirements.
 
-## Current status
-Scaffolded, version 0.1.0. The initial principal schema is [schemas/principal.schema.json](schemas/principal.schema.json); see [docs/IDENTITY-TRUST.md](docs/IDENTITY-TRUST.md).
+## Layout
+- schemas/principal.schema.json — principal data contract.
+- examples/principal.json — illustrative principal record.
+- docs/IDENTITY-TRUST.md — security and interoperability model.
+- tools/validate_principal.py — standard-library record validator.
+- tests/ — automated validation tests.
+- .github/workflows/validate.yml — CI validation.
 
-A principal identifier is not proof of authentication, authorization, or human ownership. This repository does not yet operate an identity provider or issue credentials.
+## Validate locally
+Requires Python 3.10+; no third-party packages are needed.
+
+    python tools/validate_principal.py
+    python -m unittest discover -s tests -v
+
+## Trust model
+A principal identifier names an entity within an issuer's namespace. It is not proof of authentication, authorization, or human ownership. Authentication must validate credentials and issuer, audience, validity interval, and intended use. Authorization is evaluated per action and resource, defaults to deny, and fails closed. Delegation must be constrained by action, resource, audience, and expiry. Revocation and key rotation must be supported.
+
+SPIFFE/SPIRE, OAuth 2.0, and OpenID Connect are integration targets. This repository does not yet operate an identity provider or issue credentials.
+
+## Status
+Scaffolded, v0.1.0. Published data contract, example, reference validator, tests, and CI are an initial foundation, not a deployed trust service.
 
 ## Ecosystem
-- Master registry: https://github.com/PCakes303/agent-intelligence-ecosystem
-- Main public identity: https://github.com/HuffmanMainNode
+Master registry: https://github.com/PCakes303/agent-intelligence-ecosystem
+
+Main public identity: https://github.com/HuffmanMainNode
 
 ## License
 Apache-2.0.
