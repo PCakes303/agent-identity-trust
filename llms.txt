@@ -3,12 +3,12 @@
 > Identity and trust contracts for agents and services, including principal identity, delegation, and revocation concepts.
 
 ## Start here
-- [README](${url}README.md)
-- [AI agent instructions](${url}AGENTS.md)
-- [Repository manifest](${url}manifest.json)
-- [Capabilities](${url}capabilities.json)
-- [Compatibility declarations](${url}compatibility.json)
-- [Security policy](${url}SECURITY.md)
+- [README](https://github.com/PCakes303/agent-identity-trust/blob/main/README.md)
+- [AI agent instructions](https://github.com/PCakes303/agent-identity-trust/blob/main/AGENTS.md)
+- [Repository manifest](https://github.com/PCakes303/agent-identity-trust/blob/main/manifest.json)
+- [Capabilities](https://github.com/PCakes303/agent-identity-trust/blob/main/capabilities.json)
+- [Compatibility declarations](https://github.com/PCakes303/agent-identity-trust/blob/main/compatibility.json)
+- [Security policy](https://github.com/PCakes303/agent-identity-trust/blob/main/SECURITY.md)
 
 ## Intended agent use
 Use this repository for identity data contracts and trust-boundary documentation. Delegation and revocation capabilities remain planned; contracts alone do not authenticate or authorize an agent.
