@@ -1,0 +1,9 @@
+{
+  "name": "agent-identity-trust",
+  "version": "0.1.0",
+  "status": "scaffolded",
+  "license": "Apache-2.0",
+  "description": "Identity and trust contracts for agents and services.",
+  "ecosystem_master": "https://github.com/PCakes303/agent-intelligence-ecosystem",
+  "main_public_identity": "https://github.com/HuffmanMainNode"
+}
