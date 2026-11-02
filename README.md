@@ -19,8 +19,9 @@ Defines principal identity, authentication context, authorization, delegation, r
 - .github/workflows/validate.yml — CI validation.
 
 ## Validate locally
-Requires Python 3.10+; no third-party packages are needed.
+Requires Python 3.10+. Install the pinned development schema-validator dependency:
 
+    python -m pip install -r requirements-dev.txt
     python tools/validate_principal.py
     python -m unittest discover -s tests -v
 
