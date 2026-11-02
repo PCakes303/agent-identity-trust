@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "repository": "agent-identity-trust",
+  "requires": [
+    "agent-foundation-spec",
+    "agent-schema-registry"
+  ],
+  "provides": [
+    "identity.principal",
+    "identity.trust-contract"
+  ],
+  "standards": [
+    "SPIFFE/SPIRE concepts",
+    "OAuth 2.0",
+    "OpenID Connect"
+  ],
+  "note": "Integration targets only; not yet implemented or certified."
+}
